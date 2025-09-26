@@ -2,11 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Muhammet Şıvgın | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammet Alperen Şıvgın</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1477201389074-1863f668facb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #1f1f3d;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    section {
+      margin: 3rem auto;
+      padding: 2rem;
+      width: 80%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px,
+        transparent 20px
+      );
+      transform: rotate(5deg);
+      z-index: 0;
+    }
+
+    section * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This is a GitHub Pages site created by Muhammet Şıvgın.</p>
+  <header>
+    <h1>Muhammet Alperen Şıvgın</h1>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a cybersecurity enthusiast and computer engineering student with a focus on SOC and offensive security.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <p>• Port Scanner<br />• Directory Scanner<br />• C to RISC-V Converter (Flutter)</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com<br />LinkedIn: linkedin.com/in/yourprofile</p>
+  </section>
 </body>
 </html>
